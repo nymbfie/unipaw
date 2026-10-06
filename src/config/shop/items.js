@@ -1,139 +1,119 @@
 export const shopItems = [
+    // ♡ 01 — small treats
+
     {
-        id: 'extra_work',
-        name: 'Extra Work Shift',
+        id: 'commission_5_off',
+        name: '5% off your next commission',
+        price: 250,
+        description: 'get 5% off your next commission.',
+        type: 'commission_reward',
+        discount: 5,
+        maxQuantity: 1
+    },
+    {
+        id: 'exclusive_accessory',
+        name: 'exclusive accessory',
+        price: 500,
+        description: 'get an exclusive accessory from the bit shop.',
+        type: 'commission_reward',
+        reward: 'exclusive_accessory',
+        maxQuantity: 1
+    },
+    {
+        id: 'free_addon',
+        name: 'free commission add-on',
+        price: 750,
+        description: 'get one free add-on with your next commission.',
+        type: 'commission_reward',
+        reward: 'free_addon',
+        maxQuantity: 1
+    },
+    {
+        id: 'commission_10_off',
+        name: '10% off your next commission',
+        price: 1000,
+        description: 'get 10% off your next commission.',
+        type: 'commission_reward',
+        discount: 10,
+        maxQuantity: 1
+    },
+
+    // ୨୧ 02 — worth saving for
+
+    {
+        id: 'free_accessory',
+        name: 'free accessory',
+        price: 1500,
+        description: 'get one free accessory with your next commission.',
+        type: 'commission_reward',
+        reward: 'free_accessory',
+        maxQuantity: 1
+    },
+    {
+        id: 'premium_upgrade',
+        name: 'premium commission upgrade',
+        price: 2000,
+        description: 'get a premium upgrade added to your next commission.',
+        type: 'commission_reward',
+        reward: 'premium_upgrade',
+        maxQuantity: 1
+    },
+    {
+        id: 'commission_20_off',
+        name: '20% off your next commission',
+        price: 2500,
+        description: 'get 20% off your next commission.',
+        type: 'commission_reward',
+        discount: 20,
+        maxQuantity: 1
+    },
+    {
+        id: 'mini_commission',
+        name: 'free mini commission',
+        price: 3500,
+        description: 'redeem one free mini commission.',
+        type: 'commission_reward',
+        reward: 'mini_commission',
+        maxQuantity: 1
+    },
+
+    // ✦ 03 — big rewards
+
+    {
+        id: 'custom_accessory',
+        name: 'custom accessory',
+        price: 4000,
+        description: 'get one custom accessory made for your commission.',
+        type: 'commission_reward',
+        reward: 'custom_accessory',
+        maxQuantity: 1
+    },
+    {
+        id: 'commission_30_off',
+        name: '30% off your next commission',
         price: 5000,
-        description: 'Allows 1 extra use of the `/work` command.',
-        type: 'consumable',
-        maxQuantity: 5,
-cooldown: 86400000,
-        effect: {
-            type: 'command_boost',
-            command: 'work',
-            uses: 1
-        }
+        description: 'get 30% off your next commission.',
+        type: 'commission_reward',
+        discount: 30,
+        maxQuantity: 1
     },
     {
-        id: 'bank_upgrade_1',
-        name: 'Bank Upgrade I',
-        price: 15000,
-        description: 'Increases bank capacity and allows more funds to be deposited.',
-        type: 'upgrade',
-        maxLevel: 5,
-        effect: {
-            type: 'bank_capacity',
-            multiplier: 1.5
-        }
+        id: 'premium_upgrade_accessory',
+        name: 'premium upgrade + accessory',
+        price: 6000,
+        description: 'get a premium commission upgrade and one free accessory.',
+        type: 'commission_reward',
+        reward: 'premium_upgrade_accessory',
+        maxQuantity: 1
     },
     {
-        id: 'diamond_pickaxe',
-        name: 'Diamond Pickaxe',
-        price: 50000,
-        description: 'Increases yield from `/mine`',
-        type: 'tool',
-        durability: 100,
-        effect: {
-            type: 'mining_yield',
-            multiplier: 2.0
-        }
-    },
-    {
-        id: 'premium_role',
-        name: 'Premium Server Role',
-        price: 15000,
-        description: 'A special role granting a fancy color and a 10% daily bonus.',
-        type: 'role',
-roleId: null,
-        effect: {
-            type: 'daily_bonus',
-            multiplier: 1.1
-        }
-    },
-    {
-        id: 'lucky_clover',
-        name: 'Lucky Clover',
-        price: 10000,
-        description: 'Increases the chance of winning a higher payout on `/gamble` once.',
-        type: 'consumable',
-        maxQuantity: 10,
-        effect: {
-            type: 'gamble_boost',
-            multiplier: 1.5,
-            uses: 1
-        }
-    },
-    {
-        id: 'fishing_rod',
-        name: '🎣 Fishing Rod',
-        price: 5000,
-        description: 'Used for fishing commands',
-        type: 'tool',
-        durability: 100,
-        effect: {
-            type: 'fishing_yield',
-            multiplier: 1.0
-        }
-    },
-    {
-        id: 'pickaxe',
-        name: '⛏️ Pickaxe',
+        id: 'full_commission',
+        name: 'free full commission',
         price: 7500,
-        description: 'Used for mining commands',
-        type: 'tool',
-        durability: 100,
-        effect: {
-            type: 'mining_yield',
-            multiplier: 1.2
-        }
-    },
-    {
-        id: 'laptop',
-        name: '💻 Laptop',
-        price: 15000,
-        description: 'Increases work earnings',
-        type: 'tool',
-        durability: 200,
-        effect: {
-            type: 'work_yield',
-            multiplier: 1.5
-        }
-    },
-    {
-        id: 'lucky_charm',
-        name: '🍀 Lucky Charm',
-        price: 10000,
-        description: 'Increases luck for gambling. Has 3 uses before being consumed.',
-        type: 'consumable',
-        maxQuantity: 10,
-        effect: {
-            type: 'gamble_boost',
-            multiplier: 1.3,
-            uses: 3
-        }
-    },
-    {
-        id: 'bank_note',
-        name: '📜 Bank Note',
-        price: 25000,
-        description: 'Increases bank capacity by 10,000. Can be purchased multiple times.',
-        type: 'tool',
-        durability: null,
-        effect: {
-            type: 'bank_capacity',
-            increase: 10000
-        }
-    },
-    {
-        id: 'personal_safe',
-        name: '🔒 Personal Safe',
-        price: 30000,
-        description: 'Protects your money from theft. Prevents others from robbing you.',
-        type: 'tool',
-        durability: null,
-        effect: {
-            type: 'robbery_protection',
-            protection: true
-        }
+        description: 'redeem one full commission for free.',
+        type: 'commission_reward',
+        reward: 'full_commission',
+        maxQuantity: 1
     }
 ];
 
