@@ -11,7 +11,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "online",
+    status: "idle",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -24,8 +24,8 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "stalking",     // this is what people actually see
-        type: 4,               // Custom
+        state: "✎﹒﹒join /unipaw",     // this is what people actually see
+        type: 1,               // Custom
       },
     ],
   },
@@ -93,27 +93,27 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699",
-      secondary: "#2F3136",
+      primary: "#DFB1BE",
+      secondary: "#DFB1BE",
 
       // Standard status colors for success/error/warning/info messages.
-      success: "#57F287",
-      error: "#ED4245",
-      warning: "#FEE75C",
-      info: "#3498DB",
+      success: "#DFB1BE",
+      error: "#DFB1BE",
+      warning: "#DFB1BE",
+      info: "#DFB1BE",
 
       // Neutral utility colors.
-      light: "#FFFFFF",
-      dark: "#202225",
-      gray: "#99AAB5",
+      light: "#DFB1BE",
+      dark: "#DFB1BE",
+      gray: "#DFB1BE",
 
       // Discord-style palette shortcuts.
-      blurple: "#5865F2",
-      green: "#57F287",
-      yellow: "#FEE75C",
-      fuchsia: "#EB459E",
-      red: "#ED4245",
-      black: "#000000",
+      blurple: "#DFB1BE",
+      green: "#DFB1BE",
+      yellow: "#DFB1BE",
+      fuchsia: "#DFB1BE",
+      red: "#DFB1BE",
+      black: "#DFB1BE",
 
       // Feature-specific colors.
       giveaway: {
@@ -121,22 +121,22 @@ export const botConfig = {
         ended: "#ED4245",
       },
       ticket: {
-        open: "#57F287",
-        claimed: "#FAA61A",
-        closed: "#ED4245",
-        pending: "#99AAB5",
+        open: "#DFB1BE",
+        claimed: "#DFB1BE",
+        closed: "#DFB1BE",
+        pending: "#DFB1BE",
       },
-      economy: "#F1C40F",
-      birthday: "#E91E63",
-      moderation: "#9B59B6",
+      economy: "#DFB1BE",
+      birthday: "#DFB1BE",
+      moderation: "#DFB1BE",
 
       // Ticket priority color mapping.
       priority: {
-        none: "#95A5A6",
-        low: "#3498db",
-        medium: "#2ecc71",
-        high: "#f1c40f",
-        urgent: "#e74c3c",
+        none: "#DFB1BE",
+        low: "#DFB1BE",
+        medium: "#DFB1BE",
+        high: "#DFB1BE",
+        urgent: "#DFB1BE",
       },
     },
     footer: {
